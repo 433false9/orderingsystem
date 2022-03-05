@@ -1,0 +1,21 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: configserver
+  cloud:
+    bus:
+      trace:
+        enable: true
+    config:
+      server:
+        git:
+          uri: https://github.com/433false9/orderingsystem.git #git仓库地址
+          searchPaths: config #仓库路径
+          username: 433false9 #git仓库用户名
+          password: Senge112233 #git仓库密码
+      label: main #仓库的分支
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
