@@ -6,6 +6,8 @@ spring:
       discovery:
         enabled: true
         serviceId: configserver #连接的配置中心名称
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
 eureka:
   client:
     serviceUrl:
